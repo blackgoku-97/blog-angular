@@ -20,7 +20,7 @@
           </li>
         </ul>
 
-        <ul class="navbar-nav navbar-right" *ngIf="!identity">
+        <ul class="navbar-nav navbar-right" *ngIf="!identity.name">
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" [routerLink]="['/login']">Login</a>
           </li>
@@ -42,7 +42,7 @@
               <li><hr class="dropdown-divider"></li>
               <li><a class="dropdown-item" href="#">Mi perfil</a></li>
               <li><a class="dropdown-item" href="#">Ajustes</a></li>
-              <li><a class="dropdown-item" href="#">Salir</a></li>
+              <li><a class="dropdown-item" [routerLink]="['/logout/1']">Salir</a></li>
             </ul>
           </li>
         </ul>
